@@ -28,7 +28,7 @@ console.log(`Il prezzo del biglietto intero è € ${fullTicketPrice}`);
 
 // BIGLIETTO SCONTATO PER GIOVANI
 
-if (travelerAge < 18) {
+if (travelerAge <= 18) {
     discountedTicketPrice = (fullTicketPrice - (fullTicketPrice / 100) * 20).toFixed(2);
 
     const discountDisclaimer = `complimenti!, il tuo biglietto invece costa € ${discountedTicketPrice} perchè hai ${travelerAge} anni`;
@@ -43,7 +43,7 @@ if (travelerAge < 18) {
     // BIGLIETTO SCONTATO PER ANZIANI
 
 }
-if (travelerAge > 65) {
+if (travelerAge >= 65) {
     discountedTicketPrice = (fullTicketPrice - (fullTicketPrice / 100) * 40).toFixed(2);
 
     const discountDisclaimer = `complimenti!, il tuo biglietto invece costa € ${discountedTicketPrice} perchè hai ${travelerAge} anni`;
